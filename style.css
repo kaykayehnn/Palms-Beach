@@ -294,7 +294,12 @@ body {
   .award-card {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
+  }
+
+  .award-card:not(:last-child) {
+    padding-bottom: 32px;
+    border-bottom: 1px solid black;
   }
 }
 
