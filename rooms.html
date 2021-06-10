@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/normalize.css@8.0.1/normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Хотел Palms Beach | Настаняване</title>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="backdrop"></div>
+      <header class="header">
+        <img class="header-logo" src="./images/palm-tree.svg" alt="" />
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="./">Начало</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="./gallery.html">Галерия</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./rooms.html">Настаняване</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="cta-container">
+        <div class="cta">
+          <h1 class="title">Хотел Palms&nbsp;Beach</h1>
+        </div>
+      </div>
+    </div>
+
+    <main class="container">
+      <h2 class="main-title">Условия за настаняване</h2>
+      <section class="accomodation-section">
+        <div class="accomodation-subsection">
+          <div class="accomodation-tips">
+            <p>Преди да постъпите в <b>Palms Beach</b> Ви молим:</p>
+            <ul class="accomodation-list">
+              <li class="accomodation-tip">
+                Моля свържете се с нас по имейл или телефон, за да подготвим
+                вашата стая.
+              </li>
+              <li class="accomodation-tip">
+                Моля спазвайте тишина между 2 и 4 часа следобед, когато другите
+                гости си почиват.
+              </li>
+              <li class="accomodation-tip">
+                Моля не влизайте с халати или бански костюми в ресторанта.
+                Официалното облекло е препоръчително.
+              </li>
+              <li class="accomodation-tip">
+                Моля пазете личните си вещи. Комплексът не носи отговорност при
+                загубване, кражба или други повреди.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <img
+          class="reception-image"
+          src="./images/reception.jpg"
+          alt="Рецепция"
+        />
+      </section>
+      <section class="queries-section">
+        <h2 class="main-title">Запитвания</h2>
+        <div class="form-container">
+          <form class="query-form" action="#question" method="POST">
+            <div>
+              <label class="label" for="name"><b>Име</b></label>
+              <input
+                class="input"
+                type="text"
+                name="name"
+                id="name"
+                min="2"
+                placeholder="Въведете Вашето име"
+                required
+              />
+            </div>
+            <div>
+              <label class="label" for="surname"><b>Фамилия</b></label>
+              <input
+                class="input"
+                type="text"
+                name="surname"
+                id="surname"
+                minlength="2"
+                placeholder="Въведете Вашата фамилия"
+                required
+              />
+            </div>
+            <div>
+              <label class="label" for="phone"><b>Телефон</b></label>
+              <input
+                class="input"
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="Въведете Вашия телефонен номер"
+                minlength="10"
+                maxlength="10"
+                required
+              />
+            </div>
+            <div>
+              <label class="label" for="query"><b>Запитване</b></label>
+              <textarea
+                class="textarea"
+                name="query"
+                id="query"
+                cols="30"
+                rows="10"
+                placeholder="Въведете Вашето запитване"
+                maxlength="1000"
+              ></textarea>
+            </div>
+            <input class="submit-button" type="submit" value="Изпрати" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">&copy; Palms Beach 2021</footer>
+    <!-- Icon https://www.flaticon.com/free-icon/palm-tree_616894?term=palm&page=1&position=6&page=1&position=6&related_id=616894&origin=search -->
+  </body>
+</html>
