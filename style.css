@@ -25,6 +25,7 @@ body {
   height: 100vh;
   background: url("./images/hero.jpg");
   background-position: center;
+  background-size: cover;
 }
 
 .backdrop {
